@@ -1,4 +1,4 @@
-$family-serif: "Ovo", "Georgia", "STZhongsong", "Microsoft YaHei", serif;
+$family-serif: "Lora", "Georgia", "STZhongsong", "Microsoft YaHei", serif;
 $family-mono: "Source Code Pro", monospace, "Microsoft YaHei";
 $border-color: #dbdbdb;
 
@@ -6,6 +6,40 @@ body, button, input, select, textarea {
     font-family: $family-serif;
 }
 
+
+/* start */
+body, html {
+    background-color: #18222D;
+    color: #fefefe;
+}
+
+a {
+    color: #009170;
+}
+a:hover {
+    color: #005240;
+}
+
+a.navbar-item.is-active, a.navbar-item:hover, a.navbar-link.is-active, a.navbar-link:hover {
+    background-color: #f5f5f5;
+    color: #ffc600;
+}
+
+.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
+    color: #ffc600;
+    font-weight: 400;
+    line-height: 1.125;
+}
+
+code {
+    background-color:#282C34;
+}
+
+.navbar-menu {
+    background-color: #222F3E;
+}
+
+/* end */
 
 a.tag.article-tag {
     font-size: 0.9rem;
@@ -19,25 +53,28 @@ a.tag.article-tag {
     }
 
     .navbar.is-transparent .navbar-dropdown a.navbar-item:hover {
-        color: #3273dc;
+        color: #ffc600;
     }
 }
 
 .navbar-main {
-    border-bottom: 1px solid $border-color;
     transition: 0.1s ease-in;
+    background-color: #222F3E;
+   
 
     .navbar-logo {
-        font-size: 1.5rem;
-        font-weight: 600;
+        font-family: "Montserrat";
+        
     }
 
     .navbar-item {
         text-align: center;
+        color: #009170;
+        background-color: #222F3E;
     }
 
     a.navbar-item.is-active {
-        color: #3273dc;
+        color: #ffc600;
     }
 
     .toc .navbar-dropdown {
@@ -47,11 +84,6 @@ a.tag.article-tag {
 }
 
 .article {
-    .second-date-block {
-        color: gray;
-        font-size: 0.8rem;
-    }
-
     & + .article {
         padding-top: 2rem;
         border-top: 1px solid $border-color;
@@ -62,6 +94,7 @@ a.tag.article-tag {
         color: inherit;
         border-bottom: 1px dotted transparent;
         &:hover {
+            color: #917100; /* add hover color */
             border-bottom-color: black;
         }
     }
@@ -355,6 +388,7 @@ a.tag.article-tag {
 
 .searchbox {
     display: none;
+    
 
     &.show {
         display: block;
@@ -408,7 +442,7 @@ a.tag.article-tag {
             display: inline-block;
 
             &:hover {
-                color: #3273dc;
+                color: #ffc600;
             }
         }
     }

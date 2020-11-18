@@ -2,8 +2,6 @@
 <title><%= page_title() %></title>
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/outdated-browser/1.1.5/outdatedbrowser.min.css">
-
 <% const languages = display_languages();
 const pageLanguage = page_language(page);
 if (languages.length > 1) {
@@ -40,19 +38,28 @@ if (languages.length > 1) {
 <link rel="icon" href="<%- get_config('favicon') %>">
 <% } %>
 
-<link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ovo|Source+Code+Pro">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+
+<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/<%= get_config('article.highlight', 'atom-one-light') %>.min.css">
 
 <% if (!(has_config('plugins.gallery') && get_config('plugins.gallery') === false)) { %>
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
 <% } %>
-
+    
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/<%= get_config('article.highlight', 'atom-one-light') %>.min.css">
-
+    
 <%- css('css/style') %>
+    
+<script defer src="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
 
-<script defer src="//use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+<script> loadCSS("https://fonts.loli.net/css?family=Lora|Montserrat|Fira+Mono|Material+Icons")</script>
+<link rel="stylesheet" href="https://fonts.loli.net/css?family=Lora|Montserrat|Fira+Mono|Material+Icons" media="all">
+<noscript>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lora|Montserrat|Anonymous+Pro:400|Material+Icons"/>
+</noscript>
+
+
 
 <% if (has_config('plugins')) { %>
     <% for (let plugin in get_config('plugins')) { %>

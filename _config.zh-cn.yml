@@ -1,0 +1,23 @@
+favicon: /images/favicon.ico
+
+menu:
+    归档: /archives
+    分类: /categories
+    关于: /about
+
+article:
+    # Show word count and estimated reading time.
+    readtime: true
+    # Code highlight theme, please see https://highlightjs.org/static/demo/
+    highlight: atom-one-dark
+
+logo:
+    text: mykonakona
+
+navbar_links:
+  RSS:
+    icon: fas fa-rss
+    url: https://mykonakona.github.io/atom.xml
+
+search:
+    type: insight

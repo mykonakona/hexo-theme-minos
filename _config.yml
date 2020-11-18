@@ -1,0 +1,23 @@
+favicon: /images/favicon.ico
+
+menu:
+    Archives: /archives
+    Categories: /categories
+    About: /about
+
+article:
+    # Show word count and estimated reading time.
+    readtime: true
+    # Code highlight theme, please see https://highlightjs.org/static/demo/
+    highlight: atom-one-dark    
+
+logo:
+    text: mykonakona
+
+navbar_links:
+  RSS:
+    icon: fas fa-rss
+    url: https://mykonakona.github.io/atom.xml
+
+search:
+    type: insight
