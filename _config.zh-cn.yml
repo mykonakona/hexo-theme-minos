@@ -21,3 +21,10 @@ navbar_links:
 
 search:
     type: insight
+
+# Other plugins and their settings.
+plugins:
+  mathjax: true
+  katex: false
+  gallery: true
+  clipboard: true
