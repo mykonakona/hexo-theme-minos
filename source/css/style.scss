@@ -14,10 +14,10 @@ body, html {
 }
 
 a {
-    color: #009170;
+    color: #00DBAB;
 }
 a:hover {
-    color: #005240;
+    color: #00C298;
 }
 
 a.navbar-item.is-active, a.navbar-item:hover, a.navbar-link.is-active, a.navbar-link:hover {
@@ -194,17 +194,21 @@ a.tag.article-tag {
     }
 
     a[target="_blank"] {
-        &:after {
-            display: none;
-            content: "\f35d";
-            font-size: .8rem;
-            font-family: "Font Awesome 5 Solid";
-        }
 
-        .fa-external-link-alt {
-            margin-left: .3rem;
-            width: .8rem;
-        }
+
+            &:after {
+                display: none;
+                content: "\f35d";
+                font-size: .8rem;
+                font-family: "Font Awesome 5 Solid";
+            }
+            
+            .fa-external-link-alt {
+                margin-left: .3rem;
+                width: .8rem;
+            }
+
+
     }
 
     blockquote {
