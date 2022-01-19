@@ -22,6 +22,9 @@ navbar_links:
 search:
     type: insight
 
+busuanzi:
+    enable: true
+
 # Other plugins and their settings
 plugins:
   mathjax: true

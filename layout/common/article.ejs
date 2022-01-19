@@ -9,7 +9,7 @@
     <div class="article-meta columns is-variable is-1 is-multiline is-mobile is-size-7-mobile">
         <span class="column is-narrow">
             <time datetime="<%= date_xml(post.date) %>" itemprop="datePublished"><%= format_date_full(post.date) %></time>
-        </span>
+        </span>        
         <% if (post.categories && post.categories.length){ %>
         <span class="column is-narrow article-category">
             <i class="far fa-folder"></i>
@@ -18,6 +18,14 @@
                     .join('<span>></span>') %>
         </span>
         <% } %>
+
+        <% if (theme.busuanzi && theme.busuanzi.enable && !index){ %>
+            <!-- 不蒜子统计 -->
+            <span id="busuanzi_container_page_pv" class="column is-narrow">
+                <span id="busuanzi_value_page_pv"></span>读过
+            </span>
+        <% } %>
+
         <% if (!has_config('article.readtime') || get_config('article.readtime') === true) { %>
         <span class="column is-narrow">
             <% let words = word_count(post._content); %>
