@@ -3,6 +3,7 @@ favicon: /images/favicon.ico
 menu:
     归档: /archives
     分类: /categories
+    相册: /gallery
     关于: /about
 
 article:
