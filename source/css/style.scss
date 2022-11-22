@@ -1,5 +1,5 @@
-$family-serif: "Lora", "Georgia", "STZhongsong", "Microsoft YaHei", serif;
-$family-mono: "Source Code Pro", monospace, "Microsoft YaHei";
+$family-serif: "Noto+Serif";
+$family-mono: "Ubuntu+Mono";
 $border-color: #dbdbdb;
 
 body, button, input, select, textarea {
@@ -212,9 +212,10 @@ a.tag.article-tag {
     }
 
     blockquote {
+        color: black;
         &.colorquote {
             position: relative;
-
+            
             &:before {
                 content: " ";
                 position: absolute;
@@ -228,7 +229,7 @@ a.tag.article-tag {
                 border-radius: 50%;
                 text-align: center;
 
-                color: white;
+                color: fefefe;
                 background-size: 16px 16px;
                 background-position: 4px 4px;
                 background-repeat: no-repeat;
