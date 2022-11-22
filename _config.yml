@@ -3,6 +3,7 @@ favicon: /images/favicon.ico
 menu:
     Archives: /archives
     Categories: /categories
+    Gallery: /gallery
     About: /about
 
 article:
@@ -29,5 +30,5 @@ busuanzi:
 plugins:
   mathjax: true
   katex: false
-  gallery: false
+  gallery: true
   clipboard: true
