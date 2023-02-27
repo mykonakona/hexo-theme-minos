@@ -1,24 +1,35 @@
-<% if (!has_config('comment.repo') || !has_config('comment.repo_id') || !has_config('comment.catogory') ||
-		!has_config('comment.catogory_id')) { %>
+<% if (!has_config('comment.data-repo') || 
+       !has_config('comment.data-repo-id') || 
+       !has_config('comment.data-category') ||
+       !has_config('comment.data-category-id') ||
+       !has_config('comment.data-mapping') ||
+       !has_config('comment.data-strict') ||
+       !has_config('comment.data-reactions-enabled') ||
+       !has_config('comment.data-emit-metadata') ||
+       !has_config('comment.data-input-position') ||
+       !has_config('comment.data-theme') ||
+       !has_config('comment.data-lang') ||
+       !has_config('comment.data-loading') ||
+       !has_config('comment.crossorigin') 
+       ) { %>
 <div class="notification is-danger">
-	You forgot to set the <code>repo</code>, <code>repo_id</code>, <code>catogory</code>, or <code>catogory_id</code> for giscus.
-	Please set it in <code>_config.yml</code>.
+	Please recheck your configuration of giscus in <code>_config.yml</code> and fix it to remove this notification.
 </div>
 <% } else { %>
 <script src="https://giscus.app/client.js"
-        data-repo="<%= get_config('comment.repo') %>",
-        data-repo-id="<%= get_config('comment.repo_id') %>"
-        data-category="<%= get_config('comment.catogory') %>"
-        data-category-id="<%= get_config('comment.catogory_id') %>"
-        data-mapping="url"
-        data-strict="0"
-        data-reactions-enabled="1"
-        data-emit-metadata="0"
-        data-input-position="top"
-        data-theme="preferred_color_scheme"
-        data-lang="zh-CN"
-        data-loading="lazy"
-        crossorigin="anonymous"
+        data-repo="<%= get_config('comment.data-repo') %>"
+        data-repo-id="<%= get_config('comment.data-repo-id') %>"
+        data-category="<%= get_config('comment.data-category') %>"
+        data-category-id="<%= get_config('comment.data-category-id') %>"
+        data-mapping="<%= get_config('comment.data-mapping') %>"
+        data-strict="<%= get_config('comment.data-strict') %>"
+        data-reactions-enabled="<%= get_config('comment.data-reactions-enabled') %>"
+        data-emit-metadata="<%= get_config('comment.data-emit-metadata') %>"
+        data-input-position="<%= get_config('comment.data-input-position') %>"
+        data-theme="<%= get_config('comment.data-theme') %>"
+        data-lang="<%= get_config('comment.data-lang') %>"
+        data-loading="<%= get_config('comment.data-loading') %>"
+        crossorigin="<%= get_config('comment.crossorigin') %>"
         async>
 </script>
 <% } %>
