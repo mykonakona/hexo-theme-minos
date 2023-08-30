@@ -23,8 +23,8 @@ navbar_links:
 search:
     type: insight
 
-busuanzi:
-    enable: true
+description: 
+    Just Another Weblog
 
 # Other plugins and their settings
 plugins:

@@ -1,9 +1,10 @@
-$family-serif: "Noto+Serif";
-$family-mono: "Ubuntu+Mono";
 $border-color: #dbdbdb;
 
+
+
 body, button, input, select, textarea {
-    font-family: $family-serif;
+    font-family: 'Noto Sans SC', sans-serif;
+    font-weight: 300;
 }
 
 
@@ -63,7 +64,8 @@ a.tag.article-tag {
    
 
     .navbar-logo {
-        font-family: "Montserrat";
+        font-family: 'Noto Sans SC', sans-serif;
+        font-weight: 400;
         
     }
 
@@ -483,7 +485,7 @@ a.tag.article-tag {
 
 code, pre {
     font-size: 0.85rem;
-    font-family: $family-mono;
+    font-family: 'Noto Sans Mono', monospace;
 }
 
 figure.highlight {
@@ -523,7 +525,7 @@ figure.highlight {
 
         span {
             font-weight: 500;
-            font-family: $family-mono;
+            font-family: 'Noto Sans Mono', monospace;
         }
 
         a {

@@ -43,23 +43,23 @@ if (languages.length > 1) {
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/<%= get_config('article.highlight', 'atom-one-light') %>.min.css">
 
 <% if (!(has_config('plugins.gallery') && get_config('plugins.gallery') === false)) { %>
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css" media="none" onload="if(media!='all')media='all'">
+<noscript><link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"></noscript>
+<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css" media="none" onload="if(media!='all')media='all'">
+<noscript><link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css"></noscript>
 <% } %>
-    
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/<%= get_config('article.highlight', 'atom-one-light') %>.min.css">
-
 
 <%- css('css/style') %>
 
 <script defer src="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
-    
-<link rel="stylesheet" 
-    href="https://fonts.font.im/css?family=Noto+Serif|Montserrat+Serif|Ubuntu+Mono|Material+Icons&display=swap" 
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Noto+Sans+SC&display=swap" rel="stylesheet"
     media="print"
     onload="this.media='all'">
 <noscript>
-    <link rel="stylesheet" href="//fonts.font.im/css?family=Noto+Serif|Montserrat+Serif|Ubuntu+Mono|Material+Iconsb&display=swap"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Noto+Sans+SC&display=swap"/>
 </noscript>
 
 

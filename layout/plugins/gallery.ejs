@@ -15,12 +15,12 @@
             });
             }
         });
-    })(jQuery);
-
-    
+    })(jQuery);    
 </script>
 <script src="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/js/blueimp-gallery.min.js"></script>
+<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/css/blueimp-gallery.min.css" />
 <script>
+    if (document.getElementById('links')) {
     document.getElementById('links').onclick = function (event) {
       event = event || window.event
       var target = event.target || event.srcElement
@@ -29,5 +29,6 @@
       var links = this.getElementsByTagName('a')
       blueimp.Gallery(links, options)
     }
+}
   </script>
 <% } %>
