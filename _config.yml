@@ -28,7 +28,7 @@ busuanzi:
 
 # Other plugins and their settings
 plugins:
-  mathjax: true
+  mathjax: false
   katex: false
-  gallery: true
+  blue-gallery: false
   clipboard: true

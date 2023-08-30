@@ -45,6 +45,8 @@ if (languages.length > 1) {
 <% if (!(has_config('plugins.gallery') && get_config('plugins.gallery') === false)) { %>
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
+<% } %>
+<% if (!(has_config('plugins.blueimp-gallery') && get_config('plugins.blueimp-gallery') === false)) { %>
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/css/blueimp-gallery.min.css" />
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/css/blueimp-gallery-indicator.min.css" />
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/css/blueimp-gallery-video.min.css" />
@@ -59,7 +61,10 @@ if (languages.length > 1) {
 
 
 <script> loadCSS("https://fonts.font.im/css?family=Noto+Serif|Montserrat|Ubuntu+Mono|Material+Icons")</script>
-<link rel="stylesheet" href="https://fonts.font.im/css?family=Noto+Serif|Montserrat|Ubuntu+Mono|Material+Icons" media="all">
+<link rel="stylesheet" 
+    href="https://fonts.font.im/css?family=Noto+Serif|Montserrat|Ubuntu+Mono|Material+Icons" 
+    media="print"
+    onload="this.media='all'">
 <noscript>
     <link rel="stylesheet" href="//fonts.font.im/css?family=Noto+Serif|Montserrat|Ubuntu+Mono|Material+Icons"/>
 </noscript>
