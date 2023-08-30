@@ -30,5 +30,5 @@ busuanzi:
 plugins:
   mathjax: false
   katex: false
-  blue-gallery: false
+  gallery: true
   clipboard: true

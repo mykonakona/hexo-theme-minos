@@ -1,6 +1,6 @@
 <meta charset="utf-8">
 <title><%= page_title() %></title>
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
 <% const languages = display_languages();
 const pageLanguage = page_language(page);
@@ -46,24 +46,20 @@ if (languages.length > 1) {
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css">
 <% } %>
-<% if (!(has_config('plugins.blueimp-gallery') && get_config('plugins.blueimp-gallery') === false)) { %>
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/css/blueimp-gallery.min.css" />
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/css/blueimp-gallery-indicator.min.css" />
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/css/blueimp-gallery-video.min.css" />
-<% } %>
     
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/highlight.js/9.12.0/styles/<%= get_config('article.highlight', 'atom-one-light') %>.min.css">
 
 
 <%- css('css/style') %>
+
+<script defer src="https://cdn.bootcdn.net/ajax/libs/font-awesome/5.15.1/js/all.min.js"></script>
     
-<script> loadCSS("https://fonts.font.im/css?family=Noto+Serif|Montserrat|Ubuntu+Mono|Material+Icons")</script>
 <link rel="stylesheet" 
-    href="https://fonts.font.im/css?family=Noto+Serif|Montserrat|Ubuntu+Mono|Material+Icons" 
+    href="https://fonts.font.im/css?family=Noto+Serif|Montserrat+Serif|Ubuntu+Mono|Material+Icons&display=swap" 
     media="print"
     onload="this.media='all'">
 <noscript>
-    <link rel="stylesheet" href="//fonts.font.im/css?family=Noto+Serif|Montserrat|Ubuntu+Mono|Material+Icons"/>
+    <link rel="stylesheet" href="//fonts.font.im/css?family=Noto+Serif|Montserrat+Serif|Ubuntu+Mono|Material+Iconsb&display=swap"/>
 </noscript>
 
 
