@@ -45,8 +45,6 @@ if (languages.length > 1) {
 <% if (!(has_config('plugins.gallery') && get_config('plugins.gallery') === false)) { %>
 <link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css" media="none" onload="if(media!='all')media='all'">
 <noscript><link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"></noscript>
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css" media="none" onload="if(media!='all')media='all'">
-<noscript><link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/justifiedGallery/3.6.5/css/justifiedGallery.min.css"></noscript>
 <% } %>
 
 <%- css('css/style') %>
@@ -58,8 +56,6 @@ if (languages.length > 1) {
 <noscript>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+Mono&family=Noto+Sans+SC&display=swap"/>
 </noscript>
-
-
 
 <% if (has_config('plugins')) { %>
     <% for (let plugin in get_config('plugins')) { %>

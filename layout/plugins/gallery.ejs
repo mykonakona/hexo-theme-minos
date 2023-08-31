@@ -1,34 +1,12 @@
 <% if (!head && !(has_config('plugins.gallery') && get_config('plugins.gallery') === false)) { %>
 <script src="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js"></script>
-<script src="//cdnjs.loli.net/ajax/libs/justifiedGallery/3.6.5/js/jquery.justifiedGallery.min.js"></script>
 <script>
     (function ($) {
         $(document).ready(function () {
             if (typeof($.fn.lightGallery) === 'function') {
                 $('.article.gallery').lightGallery({ selector: '.gallery-item' });
             }
-            if (typeof($.fn.justifiedGallery) === 'function') {
-                $('.justified-gallery').justifiedGallery({
-                rowHeight : 250,
-                lastRow : 'nojustify',
-                margins : 30
-            });
-            }
         });
     })(jQuery);    
 </script>
-<script src="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/js/blueimp-gallery.min.js"></script>
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/blueimp-gallery/3.3.0/css/blueimp-gallery.min.css" />
-<script>
-    if (document.getElementById('links')) {
-    document.getElementById('links').onclick = function (event) {
-      event = event || window.event
-      var target = event.target || event.srcElement
-      var link = target.src ? target.parentNode : target
-      var options = { index: link, event: event }
-      var links = this.getElementsByTagName('a')
-      blueimp.Gallery(links, options)
-    }
-}
-  </script>
 <% } %>
