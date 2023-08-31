@@ -40,10 +40,11 @@ if (languages.length > 1) {
 
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css">
 
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/<%= get_config('article.highlight', 'atom-one-light') %>.min.css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.1.2/styles/<%= get_config('article.highlight', 'atom-one-light') %>.min.css"
+media="none" onload="if(media!='all')media='all'">
 
 <% if (!(has_config('plugins.gallery') && get_config('plugins.gallery') === false)) { %>
-<link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css" media="none" onload="if(media!='all')media='all'">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css" media="none" onload="if(media!='all')media='all'">
 <noscript><link rel="stylesheet" href="//cdnjs.loli.net/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css"></noscript>
 <% } %>
 

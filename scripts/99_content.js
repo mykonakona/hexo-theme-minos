@@ -1,5 +1,5 @@
 const _ = require('lodash');
-const moment = require('moment');
+const dayjs = require('dayjs')
 const cheerio = require('cheerio');
 const { formatRfc5646, formatIso639, getClosestRfc5646WithCountryCode, getPageLanguage } = require('../lib/i18n')(hexo);
 
@@ -14,6 +14,13 @@ const MOMENTJS_SUPPORTED_LANGUAGES = ['af', 'ar-dz', 'ar-kw', 'ar-ly', 'ar-ma', 
     'sr-cyrl', 'sr', 'ss', 'sv', 'sw', 'ta', 'te', 'tet', 'tg', 'th', 'tl-ph', 'tlh', 'tr',
     'tzl', 'tzm-latn', 'tzm', 'ug-cn', 'uk', 'ur', 'uz-latn', 'uz', 'vi', 'x-pseudo', 'yo',
     'zh-cn', 'zh-hk', 'zh-tw'];
+
+    require('dayjs/locale/zh-cn')
+    dayjs.locale('zh-cn') // 全局使用，不搞国际化了
+    var duration = require('dayjs/plugin/duration')
+    dayjs.extend(duration)
+    var relativeTime = require('dayjs/plugin/relativeTime')
+    dayjs.extend(relativeTime)
 
 function getMomentLocale(language) {
     let locale = formatRfc5646(language);
@@ -30,10 +37,10 @@ function getMomentLocale(language) {
 function injectMomentLocale(func) {
     return function () {
         let language = getMomentLocale(getPageLanguage(this.page));
-        moment.locale(language);
+        dayjs.locale(language);
         const args = Array.prototype.slice.call(arguments).map(arg => {
-            if (arg instanceof moment) {
-                return moment(arg).locale(language);
+            if (arg instanceof dayjs) {
+                return dayjs(arg).locale(language);
             }
             return arg;
         });
@@ -78,18 +85,24 @@ hexo.extend.helper.register('page_title', function () {
     return [title, getConfig('title', '', true)].filter(str => typeof (str) !== 'undefined' && str.trim() !== '').join(' - ');
 });
 
+
+
+
+
+
+
 /**
  * Format date to string without year.
  */
 hexo.extend.helper.register('format_date', injectMomentLocale(function (date) {
-    return moment(date).format('MMM D');
+    return dayjs(date).format('MMM D');
 }));
 
 /**
  * Format date to string with year.
  */
 hexo.extend.helper.register('format_date_full', injectMomentLocale(function (date) {
-    return moment(date).format('MMM D YYYY');
+    return dayjs(date).format('MMM D YYYY');
 }));
 
 /**
@@ -103,7 +116,7 @@ hexo.extend.helper.register('momentjs_locale', function () {
  * Export moment.duration
  */
 hexo.extend.helper.register('duration', injectMomentLocale(function () {
-    return moment.duration.apply(null, arguments);
+    return dayjs.duration.apply(null, arguments);
 }));
 
 /**

@@ -23,7 +23,7 @@ function checkDependency(name) {
 
 logger.info('Checking dependencies');
 const missingDeps = [
-    'moment',
+    'dayjs',
     'lodash',
     'cheerio',
     'js-yaml',
