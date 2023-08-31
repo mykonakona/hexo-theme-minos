@@ -40,7 +40,7 @@
         <div class="navbar-menu navbar-end">
             <% if (has_config('search')) { %>
             <a class="navbar-item search" title="<%= __('nav.search') %>" href="javascript:;">
-                <i class="fas fa-search"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
             </a>
             <% } %>
             <% if (has_config('toc') && get_config('toc') === true && typeof(page.content) !== 'undefined') { %>

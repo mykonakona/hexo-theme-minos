@@ -16,7 +16,7 @@ logo:
 
 navbar_links:
   RSS:
-    icon: fas fa-rss
+    icon: fa-solid fa-rss
     url: https://mykonakona.github.io/atom.xml
 
 search:
