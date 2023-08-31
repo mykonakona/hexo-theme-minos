@@ -3,7 +3,7 @@ $border-color: #dbdbdb;
 
 
 body, button, input, select, textarea {
-    font-family: 'Noto Sans SC', sans-serif;
+    font-family: sans-serif;
     font-weight: 300;
 }
 
@@ -64,7 +64,7 @@ a.tag.article-tag {
    
 
     .navbar-logo {
-        font-family: 'Noto Sans SC', sans-serif;
+        font-family: sans-serif;
         font-weight: 300;
         
     }
@@ -384,7 +384,7 @@ a.tag.article-tag {
 }
 
 .footer {
-    font-size: .9rem;
+    font-size: 1.3rem;
     background: transparent;
 
     .content {
@@ -486,7 +486,7 @@ a.tag.article-tag {
 
 code, pre {
     font-size: 0.85rem;
-    font-family: 'Noto Sans Mono', monospace;
+    font-family: ui-monospace;
 }
 
 figure.highlight {
@@ -526,7 +526,7 @@ figure.highlight {
 
         span {
             font-weight: 500;
-            font-family: 'Noto Sans Mono', monospace;
+            font-family: ui-monospace;
         }
 
         a {
