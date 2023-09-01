@@ -38,6 +38,10 @@ function patchCodeHighlight(content) {
             $(this).addClass('hljs-' + classes[0]);
             $(this).removeClass(classes[0]);
         }
+        else {
+            $(this).removeClass(classes[0]);
+            $(this).removeClass(classes[1]);
+        }
     });
     return $.html();
 }
