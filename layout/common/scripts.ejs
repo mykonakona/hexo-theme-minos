@@ -1,10 +1,9 @@
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/zh-cn.js"></script>
 <script>
     dayjs.extend(window.dayjs_plugin_relativeTime)
 </script>
-<script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/zh-cn.js"></script>
 <script>dayjs.locale('zh-cn')</script>
 <script>
     if (navigator.serviceWorker) {
@@ -28,11 +27,5 @@
         })
     });
 </script> -->
-
-<% if (has_config('plugins')) { %>
-    <% for (let plugin in get_config('plugins')) { %>
-    <%- partial('plugins/' + plugin, {head: false}) %>
-    <% } %>
-<% } %>
 
 <%- js('js/script') %>
