@@ -40,10 +40,9 @@ if (languages.length > 1) {
 
 <link rel="manifest" href="/manifest.json">
 
-<link rel="stylesheet" href="https://cdnjs.loli.net/ajax/libs/bulma/0.6.2/css/bulma.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.6.2/css/bulma.min.css">
 
-<link rel="stylesheet" href="../css/style.css" 
-media="none" onload="if(media!='all')media='all'">
+<%- css('css/style') %>
 
 <% if (has_config('plugins')) { %>
     <% for (let plugin in get_config('plugins')) { %>
@@ -51,4 +50,4 @@ media="none" onload="if(media!='all')media='all'">
     <% } %>
 <% } %>
 
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
