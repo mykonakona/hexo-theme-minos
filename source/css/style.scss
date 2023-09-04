@@ -29,7 +29,11 @@ a:hover {
     color: #00C298;
 }
 
-a.navbar-item.is-active, a.navbar-item:hover, a.navbar-link.is-active, a.navbar-link:hover {
+svg:hover{
+    fill: #ffc600;
+}
+
+a.navbar-item.is-active, a.navbar-item:hover, a.navbar-link.is-active, a.navbar-link:hover{
     background-color: #222F3E;
     color: #ffc600;
 }
@@ -453,7 +457,7 @@ a.tag.article-tag {
             width: 20px;
             height: 20px;
             font-size: 16px;
-            margin-top: -15px;
+            margin-top: -13px;
             position: absolute;
             text-align: center;
             display: inline-block;
@@ -593,7 +597,7 @@ figure.highlight {
     .pagination-previous a,
     .pagination-next a {
         position: relative;
-        color: inherit;
+        color: #fefefe;
     }
 
     .pagination-previous a {
