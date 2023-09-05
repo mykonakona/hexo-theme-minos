@@ -10,7 +10,6 @@
     return santize(url_for(a)) == santize(url_for(b));
 } %>
 <nav class="navbar is-transparent is-fixed-top navbar-main" role="navigation" aria-label="main navigation">
-    <div style="width: 45%;"></div>
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item navbar-logo" href="<%- url_for('/' + (!is_default_language(page_language()) ? page_language() : '')) %>">
@@ -38,7 +37,6 @@
             <% } %>
         </div>
         <% } %>
-        <div style="width: 100%;"></div>
         <div class="navbar-menu navbar-end">
             <% if (has_config('search')) { %>
             <a class="navbar-item search" title="<%= __('nav.search') %>" href="javascript:;">
@@ -76,5 +74,4 @@
             <% } %>
         </div>
     </div>
-    <div style="width: 45%;"></div>
 </nav>
