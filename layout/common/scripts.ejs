@@ -1,11 +1,11 @@
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/dayjs@1/locale/zh-cn.js"></script>
-<script>
+<script defer>
     dayjs.extend(window.dayjs_plugin_relativeTime)
 </script>
-<script>dayjs.locale('zh-cn')</script>
-<script>
+<script defer>dayjs.locale('zh-cn')</script>
+<script defer>
     if (navigator.serviceWorker) {
     navigator.serviceWorker.register('/sw.js');
 }
