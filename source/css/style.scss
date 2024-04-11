@@ -2,7 +2,7 @@ $border-color: #dbdbdb;
 
 /* noto-sans-sc-regular - chinese-simplified_latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-display: optional; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Noto Sans SC';
     font-style: normal;
     font-weight: 400;
