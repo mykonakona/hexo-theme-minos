@@ -6,3 +6,8 @@
     ])%>
 <script>dayjs.locale('zh-cn')</script>
 <script>dayjs.extend(window.dayjs_plugin_relativeTime)</script>
+<script>
+    if (navigator.serviceWorker) {
+    navigator.serviceWorker.register('/sw.js');
+}
+</script>
