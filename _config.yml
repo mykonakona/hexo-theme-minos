@@ -19,8 +19,8 @@ navbar_links:
     icon: fa-solid fa-rss
     url: https://mykonakona.github.io/atom.xml
 
-search:
-    type: insight
+# search:
+#     type: insight
     
 
 description: 
@@ -30,5 +30,5 @@ description:
 plugins:
   mathjax: false
   katex: false
-  gallery: true
+  gallery: false
   clipboard: true
