@@ -38,14 +38,7 @@
             <a href="<%- url_for(post.path) %>#more"><%= __('article.read_more') %></a>
         </p>
     <% } else { %>
-
-        <style type="text/css">
-            @import url("https://cdn.jsdelivr.net/npm/highlight.js@10.1.2/styles/atom-one-dark.min.css");
-        </style>
-        <style type="text/css">
-            @import url("https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css");
-        </style>
-        
+       
         <%- post.content %>
     <% } %>
     </div>

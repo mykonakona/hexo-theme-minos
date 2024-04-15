@@ -16,7 +16,7 @@
 	Please recheck your configuration of giscus in <code>_config.yml</code> and fix it to remove this notification.
 </div>
 <% } else { %>
-<script src="https://giscus.app/client.js"
+    <script src="https://giscus.app/client.js"
         data-repo="<%= get_config('comment.data-repo') %>"
         data-repo-id="<%= get_config('comment.data-repo-id') %>"
         data-category="<%= get_config('comment.data-category') %>"
@@ -31,7 +31,7 @@
         data-loading="<%= get_config('comment.data-loading') %>"
         crossorigin="<%= get_config('comment.crossorigin') %>"
         async>
-</script>
+    </script>
 <% } %>
 
 <% if (has_config('plugins')) { %>

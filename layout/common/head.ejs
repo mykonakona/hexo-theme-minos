@@ -36,12 +36,16 @@ if (languages.length > 1) {
 <meta name="theme-color" content="#222f3e"/>
 <link rel="manifest" href="/manifest.json">
 <link rel="preload" href="https://webfonts-seven.vercel.app/noto-sans-sc-v36-chinese-simplified_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@10.1.2/styles/atom-one-dark.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/css/lightgallery.min.css">
 <%- css('//cdn.jsdelivr.net/npm/bulma@0.6.2/css/bulma.min.css') %>
-<%- css('/css/style') %>
+<%- css(['/css/style.css','/css/insight.css']) %>
 <%- js(['//cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js', 
         '//cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js',
         '//cdn.jsdelivr.net/npm/dayjs@1/plugin/relativeTime.min.js',
         '//cdn.jsdelivr.net/npm/dayjs@1/locale/zh-cn.js',
+        '//cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js',
+        '//cdnjs.cloudflare.com/ajax/libs/lightgallery/1.6.8/js/lightgallery-all.min.js',
         '/js/script.js',
         '/js/insight.js'
     ])%>
